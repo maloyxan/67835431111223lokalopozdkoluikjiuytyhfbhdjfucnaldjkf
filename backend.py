@@ -1,7 +1,10 @@
 # backend.py
-import os 
+import os
+import sys
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from aiocryptopay import AioCryptoPay, Networks
 from pydantic import BaseModel
 
